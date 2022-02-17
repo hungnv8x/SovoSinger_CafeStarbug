@@ -25,8 +25,20 @@ class CategoryController extends BaseController
         include "App/View/Category/detail.php";
     }
 
-    public function delete()
+    public function delete($id)
     {
-        // TODO: Implement delete() method.
+        $this->model->delete($id);
+        include "App/View/Category/list.php";
+    }
+
+    public function  createCategory($category){
+        if ($_SERVER["REQUEST_METHOD"]=="GET"){
+            include"App/View/Category/create.php";
+        }
+        else{
+            $this->model->create($category);
+            header("location:index.php?page=category-list");
+        }
+
     }
 }

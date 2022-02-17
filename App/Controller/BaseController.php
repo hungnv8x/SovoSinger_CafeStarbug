@@ -8,5 +8,5 @@ abstract class BaseController
 
  public abstract function getAll();
  public abstract function getById($id);
- public abstract function delete();
+ public abstract function delete($id);
 }

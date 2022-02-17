@@ -31,6 +31,12 @@ $page = $_GET['page'] ?? "";
         case "category-detail":
             $categoryController->getById($_REQUEST['id']);
             break;
+        case "category-delete":
+            $categoryController->delete($_REQUEST['id']);
+            break;
+        case "category-create":
+            $categoryController->createCategory($_REQUEST);
+            break;
         default;
             include_once "App/View/Layout/nav.php";
     }

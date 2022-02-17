@@ -20,7 +20,7 @@ include_once "App/View/Layout/nav.php";
         <td>
             <a type="button"class="btn btn-info" href="index.php?page=category-detail&id=<?php echo $category->id?>">Detail</a>
             <a type="button"class="btn btn-success" href="index.php?page=category-edit&id=<?php echo $category->id?>">Edit</a>
-            <a type="button"class="btn btn-danger" href="index.php?page=category-delete&id=<?php echo $category->id?>">Delete</a>
+            <a onclick="return confirm('Are you sure?')" type="button"class="btn btn-danger" href="index.php?page=category-delete&id=<?php echo $category->id?>">Delete</a>
         </td>
     </tr>
 <?php endforeach;?>
