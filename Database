@@ -1,0 +1,82 @@
+create database `CafeStartBug` collate `utf8_general_ci`;
+use CafeStartBug;
+
+create table categories(
+  id int auto_increment primary key ,
+  name varchar(255),
+  description varchar(255)
+);
+
+create table products(
+    id int auto_increment primary key ,
+    name varchar(255),
+    price float,
+    category_id int,
+    image varchar(255),
+    foreign key  (category_id) references categories(id)
+);
+
+ create table staffs(
+     id int auto_increment primary key,
+     name varchar(255),
+     email varchar(255),
+     address varchar(255),
+     phone_number varchar(10),
+     birthday date,
+     image varchar(255),
+     role varchar(50)
+ );
+
+create table customers(
+    id int auto_increment primary key ,
+    name varchar(255),
+    phone_number varchar(255),
+    address varchar(255)
+);
+
+create table orders(
+  id int auto_increment primary key ,
+  staff_id int,
+  customer_id int,
+  foreign key (staff_id) references staffs(id),
+  foreign key (customer_id) references customers(id)
+);
+
+create table orderDetail(
+    id int auto_increment primary key ,
+    product_id int,
+    quantity int,
+    price float,
+    order_id int,
+    foreign key (product_id) references products(id),
+    foreign key (order_id) references orders(id)
+);
+
+insert into categories(name, description) values ('cafe', 'cac loai cafe');
+insert into categories(name, description) values ('sinh to', 'cac loai sinh to hoa qua');
+
+
+insert into customers(name, phone_number, address) values ('Dat','123456789','HN');
+insert into customers(name, phone_number, address) values ('Tung','9876543','HN');
+
+insert into staffs( name, email, role)
+values ('Admin','admin@gmail.com','Admin');
+insert into staffs( name, email, address, phone_number, birthday, image, role)
+values ('Hung','hung@gmail.com','HN','12345678','2000-09-13','hung.jpg','Nhan Vien');
+
+insert into products( name, price, category_id, image)
+values ('bac xiu',15000,1,'bacxiu.jpg');
+insert into products( name, price, category_id, image)
+values ('mang cau bo',20000,2,'mangcaubo.jpg');
+
+insert into orders( staff_id, customer_id)  values (1,2);
+insert into orders( staff_id, customer_id)  values (2,1);
+
+insert into  orderDetail( product_id, quantity, price, order_id)
+values (1,2,15000,1);
+insert into  orderDetail( product_id, quantity, price, order_id)
+values (1,2,20000,1);
+insert into  orderDetail( product_id, quantity, price, order_id)
+values (2,5,15000,2);
+insert into  orderDetail( product_id, quantity, price, order_id)
+values (2,7,20000,2);
