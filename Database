@@ -1,55 +1,57 @@
 create database `CafeStartBug` collate `utf8_general_ci`;
+
 use CafeStartBug;
 
 create table categories(
-  id int auto_increment primary key ,
-  name varchar(255),
-  description varchar(255)
+                           id int auto_increment primary key ,
+                           name varchar(255),
+                           description varchar(255)
 );
 
 create table products(
-    id int auto_increment primary key ,
-    name varchar(255),
-    price float,
-    category_id int,
-    image varchar(255),
-    foreign key  (category_id) references categories(id)
+                         id int auto_increment primary key ,
+                         name varchar(255),
+                         price float,
+                         category_id int,
+                         image varchar(255),
+                         foreign key  (category_id) references categories(id)
 );
 
- create table staffs(
-     id int auto_increment primary key,
-     name varchar(255),
-     email varchar(255),
-     address varchar(255),
-     phone_number varchar(10),
-     birthday date,
-     image varchar(255),
-     role varchar(50)
- );
+create table staffs(
+                       id int auto_increment primary key,
+                       name varchar(255),
+                       email varchar(255) unique ,
+                       address varchar(255),
+                       phone_number varchar(10),
+                       birthday date,
+                       image varchar(255),
+                       role varchar(50)
+);
 
 create table customers(
-    id int auto_increment primary key ,
-    name varchar(255),
-    phone_number varchar(255),
-    address varchar(255)
+                          id int auto_increment primary key ,
+                          name varchar(255),
+                          phone_number varchar(255),
+                          address varchar(255)
 );
 
 create table orders(
-  id int auto_increment primary key ,
-  staff_id int,
-  customer_id int,
-  foreign key (staff_id) references staffs(id),
-  foreign key (customer_id) references customers(id)
+                       id int auto_increment primary key ,
+                       staff_id int,
+                       customer_id int,
+                       date date,
+                       foreign key (staff_id) references staffs(id),
+                       foreign key (customer_id) references customers(id)
 );
 
 create table orderDetail(
-    id int auto_increment primary key ,
-    product_id int,
-    quantity int,
-    price float,
-    order_id int,
-    foreign key (product_id) references products(id),
-    foreign key (order_id) references orders(id)
+                            id int auto_increment primary key ,
+                            product_id int,
+                            quantity int,
+                            price float,
+                            order_id int,
+                            foreign key (product_id) references products(id),
+                            foreign key (order_id) references orders(id)
 );
 
 insert into categories(name, description) values ('cafe', 'cac loai cafe');
@@ -69,8 +71,8 @@ values ('bac xiu',15000,1,'bacxiu.jpg');
 insert into products( name, price, category_id, image)
 values ('mang cau bo',20000,2,'mangcaubo.jpg');
 
-insert into orders( staff_id, customer_id)  values (1,2);
-insert into orders( staff_id, customer_id)  values (2,1);
+insert into orders( staff_id, customer_id, date)  values (1,2,'2022-1-21');
+insert into orders( staff_id, customer_id, date)  values (2,1,'2022-1-23');
 
 insert into  orderDetail( product_id, quantity, price, order_id)
 values (1,2,15000,1);
