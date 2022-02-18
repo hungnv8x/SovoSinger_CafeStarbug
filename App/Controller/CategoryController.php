@@ -41,4 +41,16 @@ class CategoryController extends BaseController
         }
 
     }
+
+    public function update($category){
+        if ($_SERVER["REQUEST_METHOD"]=="GET"){
+            $category = $this->model->getById($category['id']);
+            include"App/View/Category/edit.php";
+        }
+        else{
+            $this->model->update($category);
+            header("location:index.php?page=category-list");
+        }
+
+    }
 }

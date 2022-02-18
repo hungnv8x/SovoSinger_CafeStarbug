@@ -21,6 +21,7 @@ create table staffs(
                        id int auto_increment primary key,
                        name varchar(255),
                        email varchar(255) unique ,
+                       password varchar(10),
                        address varchar(255),
                        phone_number varchar(10),
                        birthday date,
@@ -61,15 +62,15 @@ insert into categories(name, description) values ('sinh to', 'cac loai sinh to h
 insert into customers(name, phone_number, address) values ('Dat','123456789','HN');
 insert into customers(name, phone_number, address) values ('Tung','9876543','HN');
 
-insert into staffs( name, email, role)
-values ('Admin','admin@gmail.com','Admin');
-insert into staffs( name, email, address, phone_number, birthday, image, role)
-values ('Hung','hung@gmail.com','HN','12345678','2000-09-13','hung.jpg','Nhan Vien');
+insert into staffs( name, email, password, role, image)
+values ('Admin','admin@gmail.com','123123','Admin','Upload/admin.png');
+insert into staffs( name, email,password, address, phone_number, birthday, image, role)
+values ('Hung','hung@gmail.com','123123','HN','12345678','2000-09-13','Upload/hung.jpg','Nhan Vien');
 
 insert into products( name, price, category_id, image)
-values ('bac xiu',15000,1,'bacxiu.jpg');
+values ('bac xiu',15000,1,'Upload/bacxiu.jpg');
 insert into products( name, price, category_id, image)
-values ('mang cau bo',20000,2,'mangcaubo.jpg');
+values ('mang cau bo',20000,2,'Upload/mangcaubo.jpg');
 
 insert into orders( staff_id, customer_id, date)  values (1,2,'2022-1-21');
 insert into orders( staff_id, customer_id, date)  values (2,1,'2022-1-23');

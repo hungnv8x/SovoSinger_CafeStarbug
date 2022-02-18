@@ -1,11 +1,16 @@
 <?php
-
+session_start();
+use App\Controller\AuthController;
 use App\Controller\CategoryController;
+use App\Controller\ProductController;
+use App\Controller\StaffController;
 
 require "vendor/autoload.php";
 
 $categoryController = new CategoryController();
-
+$productController = new ProductController();
+$staffController = new StaffController();
+$authController= new AuthController();
 
 $page = $_GET['page'] ?? "";
 ?>
@@ -36,6 +41,57 @@ $page = $_GET['page'] ?? "";
             break;
         case "category-create":
             $categoryController->createCategory($_REQUEST);
+            break;
+        case "category-edit":
+            $categoryController->update($_REQUEST);
+            break;
+
+            // Product
+        case "product-list":
+            $productController->getAll();
+            break;
+        case "product-create":
+            $productController->create($_REQUEST);
+            break;
+        case "product-delete":
+            $productController->delete($_REQUEST['id']);
+            break;
+        case "product-detail":
+            $productController->getById($_REQUEST['id']);
+            break;
+        case "product-edit":
+            $productController->update($_REQUEST);
+            break;
+
+            //staff
+
+        case "staff-list":
+            $staffController->getAll();
+            break;
+        case "staff-delete":
+            $staffController->delete($_REQUEST['id']);
+            break;
+        case "staff-detail":
+            $staffController->getById($_REQUEST['id']);
+            break;
+        case "staff-create":
+            $staffController->create($_REQUEST);
+            break;
+        case "staff-edit":
+            $staffController->update($_REQUEST);
+            break;
+
+            //login
+        case "login":
+            if ($_SERVER["REQUEST_METHOD"]=="GET"){
+                $authController->showFormLogin();
+            }else{
+
+                $authController->login($_REQUEST);
+            }
+            break;
+        case "logout":
+            $authController->logout();
             break;
         default;
             include_once "App/View/Layout/nav.php";

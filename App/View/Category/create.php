@@ -1,4 +1,6 @@
-
+<?php
+include_once "App/View/Layout/nav.php";
+?>
 <h4 style="text-align: center;">Create Category</h4>
 <form method="post">
   <div class="form-group">

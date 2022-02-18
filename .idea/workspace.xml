@@ -2,9 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52cb4bc-7235-4cf2-bb94-29e07dac5b5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App/Controller/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/ODetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controller/StaffController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/CustomerModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/ODetailModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/OrderModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/ProductModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/StaffModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Auth/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Category/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Order/bill.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Product/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Product/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Product/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Product/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Staff/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Staff/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Staff/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/View/Staff/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/bacxiu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/hung.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/mangcaubo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c7e9335-c5e8-41f9-8119-edd482d37e21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c7e9335-c5e8-41f9-8119-edd482d37e21/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c7e9335-c5e8-41f9-8119-edd482d37e21/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c7e9335-c5e8-41f9-8119-edd482d37e21/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/CategoryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/CategoryModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/View/Category/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Category/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/View/Layout/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database" beforeDir="false" afterPath="$PROJECT_DIR$/Database" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +57,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
@@ -36,10 +83,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/View/Staff" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SovoSinger_CafeStarbug\App\View\Staff" />
+      <recent name="C:\xampp\htdocs\SovoSinger_CafeStarbug\App\View\Product" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SovoSinger_CafeStarbug\Upload" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,6 +108,7 @@
       <workItem from="1645087703801" duration="214000" />
       <workItem from="1645087960280" duration="5299000" />
       <workItem from="1645145930883" duration="435000" />
+      <workItem from="1645146960886" duration="25502000" />
     </task>
     <servers />
   </component>
