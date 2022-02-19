@@ -12,7 +12,7 @@ abstract class BaseController
 
     public abstract function delete($id);
 
-    public function uploadImage($name = "bacxiu.jpg")
+    public function uploadImage($name = "bacxiu.jpg"): string
     {
         $target_dir = "Upload/";
         $target_file = $target_dir .time(). basename($_FILES["fileToUpload"]["name"]);

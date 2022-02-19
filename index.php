@@ -1,6 +1,7 @@
 <?php
 session_start();
 use App\Controller\AuthController;
+use App\Controller\CartController;
 use App\Controller\CategoryController;
 use App\Controller\ProductController;
 use App\Controller\StaffController;
@@ -11,7 +12,7 @@ $categoryController = new CategoryController();
 $productController = new ProductController();
 $staffController = new StaffController();
 $authController= new AuthController();
-
+$cartController = new CartController();
 $page = $_GET['page'] ?? "";
 ?>
 <!doctype html>
@@ -86,15 +87,20 @@ $page = $_GET['page'] ?? "";
             if ($_SERVER["REQUEST_METHOD"]=="GET"){
                 $authController->showFormLogin();
             }else{
-
                 $authController->login($_REQUEST);
             }
             break;
         case "logout":
             $authController->logout();
             break;
+        case "cart-add":
+            $cartController->showCart();
+            break;
+        case "cart-delete":
+            $cartController->deleteCart();
+            break;
         default;
-            include_once "App/View/Layout/nav.php";
+            $productController->showProduct();
     }
     ?>
 

@@ -4,12 +4,6 @@ include_once "App/View/Layout/nav.php";
 
 <table class="table table-striped">
 
-<!--    <tr>-->
-<!--        <td><img src="--><?php //echo $product->image ?><!--" alt="" height="200" width="200"></td>-->
-<!--        <td>--><?php //echo $product->name ?><!--</td>-->
-<!--        <td>--><?php //echo $product->price ?><!--</td>-->
-<!--        <td>--><?php //echo $product->category ?><!--</td>-->
-<!--    </tr> -->
     <div class="container table table-striped">
         <h3 style="text-align: center"><?php echo $product->category ?></h3>
         <div class="row">

@@ -9,18 +9,24 @@ class ProductController extends BaseController
 {
     public function __construct()
     {
-        $this->model= new ProductModel();
+        $this->model = new ProductModel();
     }
 
     public function getAll()
     {
-       $products = $this->model->getAll();
+        $products = $this->model->getAll();
         include "App/View/Product/list.php";
+    }
+
+    public function showProduct()
+    {
+        $products = $this->model->getAll();
+        include "App/View/Layout/main.php";
     }
 
     public function getById($id)
     {
-        $product=$this->model->getById($id);
+        $product = $this->model->getById($id);
         include "App/View/Product/detail.php";
     }
 
@@ -32,27 +38,25 @@ class ProductController extends BaseController
 
     public function create($product)
     {
-        if ($_SERVER["REQUEST_METHOD"]=="GET"){
-            $categoryModel= new CategoryModel();
-            $categories=$categoryModel->getAll();
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            $categoryModel = new CategoryModel();
+            $categories = $categoryModel->getAll();
             include "App/View/Product/create.php";
-        }
-        else{
-        $product["image"] = $this->uploadImage();
-        $this->model->create($product);
-        header("location:index.php?page=product-list");
+        } else {
+            $product["image"] = $this->uploadImage();
+            $this->model->create($product);
+            header("location:index.php?page=product-list");
         }
     }
 
     public function update($request)
     {
-        if ($_SERVER["REQUEST_METHOD"]=="GET"){
-            $categoryModel= new CategoryModel();
-            $categories=$categoryModel->getAll();
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            $categoryModel = new CategoryModel();
+            $categories = $categoryModel->getAll();
             $product = $this->model->getById($request["id"]);
             include "App/View/Product/edit.php";
-        }
-        else{
+        } else {
             $request["image"] = $this->uploadImage();
             $this->model->update($request);
             header("location:index.php?page=product-list");

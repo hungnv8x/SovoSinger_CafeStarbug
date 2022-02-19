@@ -10,7 +10,7 @@ class DBConnect
     {
         $this->dns="mysql:host=localhost;dbname=cafestartbug;charset=utf8";
         $this->username="root";
-        $this->password="";
+        $this->password="root";
     }
 
     public function connect(){
