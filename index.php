@@ -82,7 +82,7 @@ $page = $_GET['page'] ?? "";
             $staffController->update($_REQUEST);
             break;
 
-            //login
+            //Auth
         case "login":
             if ($_SERVER["REQUEST_METHOD"]=="GET"){
                 $authController->showFormLogin();
@@ -92,12 +92,16 @@ $page = $_GET['page'] ?? "";
             break;
         case "logout":
             $authController->logout();
+            // cart
             break;
-        case "cart-add":
+        case "cart-list":
             $cartController->showCart();
             break;
         case "cart-delete":
             $cartController->deleteCart();
+            break;
+        case "cart-submit":
+            $cartController->update();
             break;
         default;
             $productController->showProduct();

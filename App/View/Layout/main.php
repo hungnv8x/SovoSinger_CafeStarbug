@@ -14,7 +14,7 @@ include_once "App/View/Layout/nav.php";
                 <div  class="col-7">
                     <p style=" font-size: 20px; font-family:'Comic Sans MS'"><?php echo $product->name ?></p>
                     <p style=" font-size: 20px; font-family:'Comic Sans MS'">Giá : <?php echo $product->price ?></p>
-                    <a type="button"class="btn btn-success mb-3" href="index.php?page=cart-add&id=<?php echo $product->id?>">Mua Hang</a>
+                    <a type="button"class="btn btn-success mb-3" href="index.php?page=cart-list&id=<?php echo $product->id?>">Mua Hang</a>
                 </div>
             </div>
         </div>

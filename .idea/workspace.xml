@@ -5,29 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52cb4bc-7235-4cf2-bb94-29e07dac5b5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Controller/CartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/View/Layout/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/View/Order/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/classicmodels.fG2wDg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/classicmodels.fG2wDg.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/516afc96-f3d1-40cd-a8dd-ca3b3508efc2/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260791images (2).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260811images (3).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260823images (2).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260836download.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260846images (1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260855download (1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260870download (2).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260902download (2).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/1645260916download (2).jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/DBConnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/StaffModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/StaffModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/Layout/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/Order/bill.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/Product/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Product/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/View/Layout/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/View/Order/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Order/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +50,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="25EMH8MdOVTnNU5pDG5tEaHpVCP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -98,7 +93,7 @@
       <workItem from="1645087960280" duration="5299000" />
       <workItem from="1645145930883" duration="435000" />
       <workItem from="1645146960886" duration="25502000" />
-      <workItem from="1645177678449" duration="13857000" />
+      <workItem from="1645177678449" duration="29672000" />
     </task>
     <servers />
   </component>
@@ -115,5 +110,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
