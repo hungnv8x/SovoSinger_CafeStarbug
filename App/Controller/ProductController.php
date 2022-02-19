@@ -20,7 +20,11 @@ class ProductController extends BaseController
 
     public function showProduct()
     {
-        $products = $this->model->getAll();
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            $products = $this->model->getByName($_POST["search"]);
+        }else{
+            $products = $this->model->getAll();
+        }
         include "App/View/Layout/main.php";
     }
 

@@ -3,6 +3,10 @@ include_once "App/View/Layout/nav.php";
 ?>
 
 <h2 style="text-align: center">Danh sách sản phẩm</h2>
+<form class="form-inline my-2 my-lg-0" method="post" >
+    <input class="form-control mr-sm-2" value="<?php echo $_POST["search"]?>" type="search" placeholder="Search" aria-label="Search" name="search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search-button">Search</button>
+</form>
 <div class="container mt-3">
     <div class="row">
         <?php foreach ($products as $product): ?>

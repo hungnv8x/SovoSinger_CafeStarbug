@@ -23,7 +23,7 @@ class CartController
         }
 
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $_SESSION["cart"][$_REQUEST["id"]] = 1;
+            $_SESSION["cart"][$_REQUEST["id"]] += 1;
             $ids = implode(",", array_keys($_SESSION["cart"]));
             $products = $this->productModel->showCart($ids);
 
@@ -43,7 +43,6 @@ class CartController
             }
             include_once "App/View/Order/cart.php";
         }
-
     }
 
     public function update()
@@ -58,7 +57,11 @@ class CartController
                 include_once "App/View/Order/cart.php";
             }else{
                 echo "<pre>";
+                $ids = implode(",", array_keys($_POST["quantity"]));
+                $products = $this->productModel->showCart($ids);
                 print_r($_POST);
+                print_r($products);
+
             }
         }
     }

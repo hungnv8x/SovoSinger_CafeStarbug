@@ -15,6 +15,13 @@ class ProductModel extends BaseModel
 
     }
 
+    public function getByName($name)
+    {
+        $sql = "select products.id, products.name, products.price, products.image, categories.name as category
+                from products join categories on category_id=categories.id where products.name like '%$name%'";
+        $stmt = $this->connect->query($sql);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
+    }
     public function getById($id)
     {
         $sql = "select products.id, products.name, products.price, products.image, categories.name as category
