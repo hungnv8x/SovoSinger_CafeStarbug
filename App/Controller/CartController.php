@@ -58,7 +58,7 @@ class CartController
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST["update"])) {
                 if (empty($_SESSION["cart"])){
-                    echo "gio hang khong co sp nao";
+                    echo "Giỏ hàng chưa có sản phẩm nào";
                 }else{
                     foreach ($_POST["quantity"] as $id => $item){
                         $_SESSION["cart"][$id] = $item;
@@ -69,7 +69,7 @@ class CartController
                 }
             }else{
                 if (empty($_SESSION["cart"])){
-                    echo "gio hang khong co sp nao";
+                    echo "Giỏ hàng chưa có sản phẩm nào";
                 }elseif($_POST["name"]&&$_POST["phone_number"]&&$_POST["address"]){
 //                    print_r($_SESSION["staff"]->id); exit();
                     $customer = [
@@ -102,7 +102,7 @@ class CartController
                     unset($_SESSION["cart"]);
                     header("location:index.php?page=order-list");
                 }else{
-                    echo "chua nhap thong tin khach hang";
+                    echo "Chưa nhập thông tin khách hàng";
                 }
             }
         }

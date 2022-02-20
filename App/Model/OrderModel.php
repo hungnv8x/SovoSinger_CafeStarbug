@@ -16,7 +16,7 @@ class OrderModel extends BaseModel
     }
     public function getAll(){
         $sql ="select orders.id, staffs.name as staff_name , customers.name as customer_name, orders.date from orders join customers  on customers.id = orders.customer_id
-    join staffs  on orders.staff_id = staffs.id";
+    join staffs  on orders.staff_id = staffs.id order by orders.id desc";
         $stmt = $this->connect->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }

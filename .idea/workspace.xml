@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52cb4bc-7235-4cf2-bb94-29e07dac5b5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/View/Order/detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/View/Order/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Upload/1645328072images (7).jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/CustomerModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/CustomerModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/OrderModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/OrderModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/Layout/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/View/Layout/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +82,7 @@
       <workItem from="1645146960886" duration="25502000" />
       <workItem from="1645177678449" duration="36231000" />
       <workItem from="1645275256504" duration="751000" />
-      <workItem from="1645278123962" duration="18972000" />
+      <workItem from="1645278123962" duration="20460000" />
     </task>
     <servers />
   </component>
