@@ -3,6 +3,7 @@ session_start();
 use App\Controller\AuthController;
 use App\Controller\CartController;
 use App\Controller\CategoryController;
+use App\Controller\OrderController;
 use App\Controller\ProductController;
 use App\Controller\StaffController;
 
@@ -13,6 +14,7 @@ $productController = new ProductController();
 $staffController = new StaffController();
 $authController= new AuthController();
 $cartController = new CartController();
+$orderController = new OrderController();
 $page = $_GET['page'] ?? "";
 ?>
 <!doctype html>
@@ -102,6 +104,12 @@ $page = $_GET['page'] ?? "";
             break;
         case "cart-submit":
             $cartController->update();
+            break;
+        case "order-list":
+            $orderController->getAll();
+            break;
+        case "order-detail":
+            $orderController->getById($_REQUEST["id"]);
             break;
         default;
             $productController->showProduct();

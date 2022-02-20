@@ -14,4 +14,11 @@ class CustomerModel extends BaseModel
         $stmt->bindParam(3,$customer["address"]);
         $stmt->execute();
     }
+
+    public function getId()
+    {
+        $sql = "select * from $this->table order by id desc limit 1";
+        $stmt = $this->connect->query($sql);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
+    }
 }

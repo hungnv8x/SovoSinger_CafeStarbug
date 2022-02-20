@@ -6,19 +6,21 @@ use App\Model\OrderModel;
 
 class OrderController extends BaseController
 {
-public function __construct()
-{
-    $this->model=new OrderModel();
-}
+    public function __construct()
+    {
+        $this->model = new OrderModel();
+    }
 
     public function getAll()
     {
-        // TODO: Implement getAll() method.
+        $orders = $this->model->getAll();
+        include "App/View/Order/list.php";
     }
 
     public function getById($id)
     {
-        // TODO: Implement getById() method.
+        $orders = $this->model->getById($id);
+        include "App/View/Order/detail.php";
     }
 
     public function delete($id)
@@ -26,8 +28,9 @@ public function __construct()
         // TODO: Implement delete() method.
     }
 
-    public function create($data){
+    public function create($data)
+    {
         $this->model->create($data);
-
     }
+
 }
