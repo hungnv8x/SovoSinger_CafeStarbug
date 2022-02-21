@@ -22,6 +22,7 @@ class ProductModel extends BaseModel
         $stmt = $this->connect->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
+
     public function getById($id)
     {
         $sql = "select products.id, products.name, products.price, products.image, categories.name as category

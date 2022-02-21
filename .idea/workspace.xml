@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b52cb4bc-7235-4cf2-bb94-29e07dac5b5c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/App/Model/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/DBConnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/View/Layout/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/main.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/App/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/CartController.php" afterDir="false" />
+>>>>>>> 28a9f5ca155bee9c3d0e347744dba68b9073befc
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +87,11 @@
       <workItem from="1645146960886" duration="25502000" />
       <workItem from="1645177678449" duration="36231000" />
       <workItem from="1645275256504" duration="751000" />
+<<<<<<< HEAD
       <workItem from="1645277583116" duration="2438000" />
+=======
+      <workItem from="1645278123962" duration="20460000" />
+>>>>>>> 28a9f5ca155bee9c3d0e347744dba68b9073befc
     </task>
     <servers />
   </component>

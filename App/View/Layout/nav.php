@@ -1,7 +1,7 @@
 <?php
-    if (!isset($_SESSION['staff'])){
-        header("location:index.php?page=login");
-    }
+if (!isset($_SESSION['staff'])) {
+    header("location:index.php?page=login");
+}
 ?>
 <div class="row mt-0 ">
     <div class="col-3"><a class="navbar-brand mt-0" href="index.php"><img src="Upload/logo2.png" alt=""
@@ -12,7 +12,6 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-
     <ul class="navbar-nav mr-auto">
         <li class="nav-item ">
             <a class="nav-link" href="index.php">Home <span
@@ -23,16 +22,17 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="index.php?page=category-list">Category</a>
                 <a class="dropdown-item" href="index.php?page=product-list">Product</a>
-
             </div>
         </li>
+        <?php if ($_SESSION['staff']->role == "Admin"): ?>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.php?page=staff-list">Quản Lý Nhân Viên </a>
+            </li>
+        <?php endif; ?>
         <li class="nav-item ">
-            <a class="nav-link" href="index.php?page=staff-list">Quản Lý Nhân Viên <span
-                        class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php?page=order-list">List Order </a>
         </li>
     </ul>
-
-
     <div class="form-inline my-2 my-lg-0">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">

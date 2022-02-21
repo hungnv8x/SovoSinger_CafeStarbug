@@ -4,7 +4,11 @@ include_once "App/View/Layout/nav.php";
 
 <h2 style="text-align: center">Danh sách sản phẩm</h2>
 <form class="form-inline my-2 my-lg-0" method="post" >
+
     <input class="form-control mr-sm-2" value="<?php echo $_POST["search"]?? ""?>" type="search"   name="search">
+
+    <input class="form-control mr-sm-2" value="<?php echo $_POST["search"]??"" ?>" type="search" placeholder="Search" aria-label="Search" name="search">
+
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search-button">Search</button>
 </form>
 <div class="container mt-3">
@@ -17,7 +21,7 @@ include_once "App/View/Layout/nav.php";
                 </div>
                 <div  class="col-7">
                     <p style=" font-size: 20px; font-family:'Comic Sans MS'"><?php echo $product->name ?></p>
-                    <p style=" font-size: 20px; font-family:'Comic Sans MS'">Giá : <?php echo $product->price ?></p>
+                    <p style=" font-size: 20px; font-family:'Comic Sans MS'">Giá : <span style="color: red"><?php echo number_format($product->price,0,",","." ) ?></span></p>
                     <a type="button"class="btn btn-success mb-3" href="index.php?page=cart-list&id=<?php echo $product->id?>">Mua Hang</a>
                 </div>
             </div>
