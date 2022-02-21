@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52cb4bc-7235-4cf2-bb94-29e07dac5b5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Upload/1645268187images (3).jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41eb255b-0cab-41e7-adf5-37ea4f902ead.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41eb255b-0cab-41e7-adf5-37ea4f902ead.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/803a3a2f-0248-4037-96b4-c38ca6566687.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/803a3a2f-0248-4037-96b4-c38ca6566687/storage_v2/_src_/schema/cafestartbug.b1Mahw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/803a3a2f-0248-4037-96b4-c38ca6566687/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/803a3a2f-0248-4037-96b4-c38ca6566687/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/803a3a2f-0248-4037-96b4-c38ca6566687/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/DBConnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/View/Layout/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/View/Layout/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +83,7 @@
       <workItem from="1645146960886" duration="25502000" />
       <workItem from="1645177678449" duration="36231000" />
       <workItem from="1645275256504" duration="751000" />
+      <workItem from="1645277583116" duration="2438000" />
     </task>
     <servers />
   </component>
